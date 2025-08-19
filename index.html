@@ -3,52 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>PK Labs LLC</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
+            background: linear-gradient(135deg, #f5f7fa, #e0e7ff);
+            color: #2d3748;
+            overflow-x: hidden;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 1em;
+            background: #4a90e2;
+            padding: 4em;
+            animation: fadeIn 2s ease-in;
         }
-        nav a {
-            margin: 0 1em;
-            color: white;
-            text-decoration: none;
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
         }
         main {
-            padding: 2em;
+            padding: 4em 2em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section {
+            margin: 3em 0;
+            opacity: 0;
+            animation: slideUp 1.5s ease-out forwards;
+        }
+        section:nth-child(2) { animation-delay: 0.5s; }
+        section:nth-child(3) { animation-delay: 1s; }
+        section:nth-child(4) { animation-delay: 1.5s; }
+        h2 {
+            font-size: 2em;
+            color: #4a90e2;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 1em auto;
+            color: #4a5568;
         }
         footer {
-            background-color: #333;
-            color: white;
-            padding: 1em;
+            background: #4a90e2;
+            padding: 2em;
             position: fixed;
             bottom: 0;
             width: 100%;
+            color: #ffffff;
+            animation: fadeIn 2s ease-in 2s backwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>PK Labs LLC</h1>
     </header>
     <main>
-        <h2>Home</h2>
-        <p>This is a simple website hosted on GitHub Pages.</p>
+        <section>
+            <h2>Vision</h2>
+            <p>We’re shaping a future where technology enhances life. Our bold ideas spark innovation, creating a world of endless possibilities.</p>
+        </section>
+        <section>
+            <h2>Mission</h2>
+            <p>We design sleek, transformative apps to boost well-being. Our cutting-edge projects blend tech and human potential, inviting visionary partners to join us.</p>
+        </section>
+        <section>
+            <h2>Horizon</h2>
+            <p>Step into tomorrow with us. Our exciting developments hint at a new era, ready for those who see the value in progress.</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>30 N Gould St Ste R</p>
+            <p>Sheridan, Wyoming 82801-6317</p>
+            <p>United States</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>&copy; 2025 PK Labs LLC | All Rights Reserved</p>
     </footer>
 </body>
 </html>
