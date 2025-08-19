@@ -35,23 +35,23 @@
             <a href="#pouchkinetics" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Discover PouchKinetics</a>
         </section>
 
-        <section id="vision" class="mb-16 fade-in">
+        <section id="vision" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
             <p class="text-lg max-w-3xl mx-auto">We envision a world where individuals master their habits through advanced personal technology, creating extensions of themselves that empower healthier living with unparalleled insight and innovation.</p>
         </section>
 
-        <section id="mission" class="mb-16 fade-in">
+        <section id="mission" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
             <p class="text-lg max-w-3xl mx-auto">PK Labs LLC develops practical, data-driven solutions like PouchKinetics to help users track and reduce nicotine dependence, delivering seamless, body-integrated tools that set new standards in wellness tech—open to strategic partnerships.</p>
         </section>
 
-        <section id="pouchkinetics" class="mb-16 fade-in">
+        <section id="pouchkinetics" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">PouchKinetics</h2>
             <p class="text-lg max-w-3xl mx-auto">Our flagship app empowers users to monitor and manage nicotine use with real-time insights, seamless design, and cutting-edge technology. Take control of your wellness journey.</p>
             <a href="#" class="mt-4 inline-block bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-gray-200 transition">Download Now</a>
         </section>
 
-        <section id="contact" class="mb-16 fade-in">
+        <section id="contact" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
             <p class="text-lg mb-4">30 N Gould St Ste R, Sheridan, Wyoming 82801-6317, United States</p>
             <form class="max-w-lg mx-auto">
@@ -73,5 +73,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+```
