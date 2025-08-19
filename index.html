@@ -22,50 +22,39 @@
                     <li><a href="#vision" class="hover:text-blue-300 transition">Vision</a></li>
                     <li><a href="#mission" class="hover:text-blue-300 transition">Mission</a></li>
                     <li><a href="#pouchkinetics" class="hover:text-blue-300 transition">PouchKinetics</a></li>
-                    <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+                    <li><a href="#partnerships" class="hover:text-blue-300 transition">Partnerships</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main class="max-w-7xl mx-auto px-4 py-12 flex-grow">
         <section class="text-center mb-16 fade-in">
             <h2 class="text-4xl font-extrabold mb-4">Empowering Healthier Living</h2>
             <p class="text-lg max-w-2xl mx-auto">PK Labs pioneers precision wellness tech, delivering data-driven solutions like PouchKinetics at low-cost to empower transformative health decisions.</p>
             <a href="#pouchkinetics" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Discover PouchKinetics</a>
         </section>
-
         <section id="vision" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
             <p class="text-lg max-w-3xl mx-auto">PK Labs envisions a world where accessible technology empowers people with clear, data-driven health insights. Solutions like PouchKinetics break barriers, fostering smarter decisions, boosting wellness, and countering industries that intentionally withhold or obscure data.</p>
         </section>
-
         <section id="mission" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
-        </section>
             <p class="text-lg max-w-3xl mx-auto">PK Labs develops practical, data-driven solutions like PouchKinetics to help users track behaviors, delivering seamlessly integrated tools that set new standards in wellness tech.</p>
-
+        </section>
         <section id="pouchkinetics" class="mb-16 fade-in pt-16">
             <h2 class="text-3xl font-bold mb-4">PouchKinetics</h2>
             <p class="text-lg max-w-3xl mx-auto">Our flagship app empowers users to monitor and manage pouch-form nicotine use with real-time insights, seamless design, and cutting-edge technology. Take control of your wellness journey.</p>
             <a href="#" class="mt-4 inline-block bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-gray-200 transition">Download Now</a>
         </section>
-
-        <section id="contact" class="mb-16 fade-in pt-16">
-            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-            <p class="text-lg mb-4">30 N Gould St Ste R, Sheridan, Wyoming 82801-6317, United States</p>
-            <form class="max-w-lg mx-auto">
-                <input type="text" placeholder="Name" class="w-full p-3 mb-4 bg-blue-800 bg-opacity-50 rounded text-white placeholder-gray-300">
-                <input type="email" placeholder="Email" class="w-full p-3 mb-4 bg-blue-800 bg-opacity-50 rounded text-white placeholder-gray-300">
-                <textarea placeholder="Message" class="w-full p-3 mb-4 bg-blue-800 bg-opacity-50 rounded text-white placeholder-gray-300 h-32"></textarea>
-                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Send</button>
-            </form>
+        <section id="partnerships" class="mb-16 fade-in pt-16">
+            <h2 class="text-3xl font-bold mb-4">Partnerships</h2>
+            <p class="text-lg max-w-3xl mx-auto">We are open to strategic partnerships to advance wellness innovation. Contact us at <a href="mailto:partnerships@pk-labs.org" class="underline hover:text-blue-300 transition">partnerships@pk-labs.org</a>.</p>
         </section>
     </main>
-
     <footer class="bg-blue-900 py-6">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p>&copy; 2025 PK Labs LLC | All Rights Reserved</p>
+            <p class="text-sm mt-2">30 N Gould St Ste R, Sheridan, Wyoming 82801-6317, United States</p>
             <div class="mt-4 flex justify-center space-x-4">
                 <a href="#" class="hover:text-blue-300">Privacy Policy</a>
                 <a href="#" class="hover:text-blue-300">Terms of Use</a>
@@ -73,7 +62,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -82,7 +70,6 @@
                 const targetElement = document.getElementById(targetId);
                 const headerHeight = document.querySelector('header').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
