@@ -3,96 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PK Labs LLC - Empowering healthier living through innovative wellness technology like PouchKinetics.">
+    <meta name="keywords" content="PK Labs, PouchKinetics, nicotine tracking, wellness tech, health innovation">
     <title>PK Labs LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background: linear-gradient(135deg, #1e1e2f, #2a2a4d);
-            color: #ffffff;
-            overflow-x: hidden;
-            position: relative;
-            min-height: 100vh;
-        }
-        header {
-            background: linear-gradient(135deg, #2a2a4d, #4b5e9e);
-            padding: 4em;
-            animation: fadeIn 2s ease-in;
-        }
-        h1 {
-            font-size: 3.5em;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ffffff;
-        }
-        main {
-            padding: 4em 2em;
-            max-width: 900px;
-            margin: 0 auto;
-            padding-bottom: 100px;
-        }
-        section {
-            margin: 3em 0;
-            opacity: 0;
-            animation: slideUp 1.5s ease-out forwards;
-        }
-        section:nth-child(2) { animation-delay: 0.5s; }
-        section:nth-child(3) { animation-delay: 1s; }
-        h2 {
-            font-size: 2em;
-            color: #a3bffa;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            max-width: 700px;
-            margin: 1em auto;
-            color: #ffffff;
-        }
-        footer {
-            background: #1e1e2f;
-            padding: 1.5em;
-            width: 100%;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            clear: both;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .fade-in { animation: fadeIn 1s ease-in; }
+        body { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
     </style>
 </head>
-<body>
-    <header>
-        <h1>PK Labs LLC</h1>
+<body class="font-sans text-white min-h-screen flex flex-col">
+    <header class="sticky top-0 bg-blue-900 bg-opacity-80 backdrop-blur-sm z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">PK Labs LLC</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#vision" class="hover:text-blue-300 transition">Vision</a></li>
+                    <li><a href="#mission" class="hover:text-blue-300 transition">Mission</a></li>
+                    <li><a href="#pouchkinetics" class="hover:text-blue-300 transition">PouchKinetics</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Vision</h2>
-            <p>We envision a world where individuals master their habits through advanced personal technology, creating extensions of themselves that empower healthier living with unparalleled insight and innovation.</p>
+
+    <main class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <section class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-extrabold mb-4">Empowering Healthier Living</h2>
+            <p class="text-lg max-w-2xl mx-auto">PK Labs LLC pioneers wellness tech with innovative, data-driven solutions like PouchKinetics to transform lives.</p>
+            <a href="#pouchkinetics" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Discover PouchKinetics</a>
         </section>
-        <section>
-            <h2>Mission</h2>
-            <p>PK Labs LLC develops practical, data-driven solutions like PouchKinetics to help users track and reduce nicotine dependence, delivering seamless, body-integrated tools that set new standards in wellness tech—open to strategic partnerships.</p>
+
+        <section id="vision" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
+            <p class="text-lg max-w-3xl mx-auto">We envision a world where individuals master their habits through advanced personal technology, creating extensions of themselves that empower healthier living with unparalleled insight and innovation.</p>
         </section>
-        <section>
-            <h2>Contact</h2>
-            <p>30 N Gould St Ste R</p>
-            <p>Sheridan, Wyoming 82801-6317</p>
-            <p>United States</p>
+
+        <section id="mission" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+            <p class="text-lg max-w-3xl mx-auto">PK Labs LLC develops practical, data-driven solutions like PouchKinetics to help users track and reduce nicotine dependence, delivering seamless, body-integrated tools that set new standards in wellness tech—open to strategic partnerships.</p>
+        </section>
+
+        <section id="pouchkinetics" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-4">PouchKinetics</h2>
+            <p class="text-lg max-w-3xl mx-auto">Our flagship app empowers users to monitor and manage nicotine use with real-time insights, seamless design, and cutting-edge technology. Take control of your wellness journey.</p>
+            <a href="#" class="mt-4 inline-block bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-gray-200 transition">Download Now</a>
+        </section>
+
+        <section id="contact" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-lg mb-4">30 N Gould St Ste R, Sheridan, Wyoming 82801-6317, United States</p>
+            <form class="max-w-lg mx-auto">
+                <input type="text" placeholder="Name" class="w-full p-3 mb-4 bg-blue-800 bg-opacity-50 rounded text-white placeholder-gray-300">
+                <input type="email" placeholder="Email" class="w-full p-3 mb-4 bg-blue-800 bg-opacity-50 rounded text-white placeholder-gray-300">
+                <textarea placeholder="Message" class="w-full p-3 mb-4 bg-blue-800 bg-opacity-50 rounded text-white placeholder-gray-300 h-32"></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Send</button>
+            </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 PK Labs LLC | All Rights Reserved</p>
+
+    <footer class="bg-blue-900 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 PK Labs LLC | All Rights Reserved</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-blue-300">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-300">Terms of Use</a>
+                <a href="#" class="hover:text-blue-300">X</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
